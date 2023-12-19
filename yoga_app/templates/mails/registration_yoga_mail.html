@@ -1,0 +1,64 @@
+<body style="border:1px solid #030303;border-radius:5px;">
+    <div style="border:1px solid #ff74a1;padding:8px;margin:5px;border-radius:5px;">
+    <center>
+    <h2>New Account Registration </h2>
+      <h3>Top Yoga New Account Registration</h3>
+    </center>
+  
+    <br>
+    <table>
+      <tr>
+        <td> Hi , <b>{{user.first_name}} </b></td>
+      </tr>
+    </table>
+    <table>
+      <tr>
+     <td> <b>Created  By, </b></td>
+      </tr>
+      <tr>
+        <td>
+          <hr><b>Name : </b> {{user.full_name}}<br><b>Email : </b>{{user.email}}<br><b>Created Date : </b>{{user.date_joined}}
+        </td>
+      </tr>
+    </table>
+    <hr>
+    <center>
+    <table>
+      <tr><br>
+        <td>
+          <h3>{{domain}}{% url 'activate_yoga_user' uidb64=uid token=token %}</h3>
+                  <a href="{{domain}}{% url 'activate_yoga_user' uidb64=uid token=token %}"> Click Above Link To Verify Your Email </a>
+  
+        </td><br><br>
+          <td>
+  
+  
+    </td>
+      </tr>
+  
+  
+  
+    </table>
+    </center>
+    <hr>
+    <table>
+      <tr>
+        <td><b>Need Help ?</b></td>
+  
+      </tr>
+  
+  
+      <tr>
+        <td> Visit Our <a href="{{domain}}">Help Center</a> For Support And Issues Regarding Order.</td>
+  
+      </tr>
+  
+    </table><br><br><br><br><br>
+      <h4>From, Crekaa Technologies<h4>
+        <h6>*If You Think These Is Not You! Ignore These Email .</h6>
+    <h6>*If You Think These Is Not You! Delete These Email .</h6>
+    <h6>*Best View In Gmail Light Mode Or System Light Mode. <h6>
+    </div>
+  
+    </body>
+  
